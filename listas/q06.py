@@ -4,7 +4,7 @@
 media = []
 qtde_alunos_maior_7 = 0
 
-for a in range(5):
+for a in range(10):
     notas = []
 
     for n in range(4):
@@ -13,7 +13,7 @@ for a in range(5):
     media.append(sum(notas) / 4)
     # media.append(sum(notas) / len(notas))
 
-for m in range(5):
+for m in range(10):
     print(f'Média do {m + 1}º aluno(a): {media[m]:.2f}')
     if media[m] >= 7:
         qtde_alunos_maior_7 += 1
