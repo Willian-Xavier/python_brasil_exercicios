@@ -13,7 +13,10 @@ for i in range(12):
 media_anual = sum(temperaturas) / 12
 print(f'Temperatura Média Anual: {media_anual:.1f}°')
 
+count = 0
+
 for j in temperaturas:
     if j > media_anual:
         print(j, '°', sep='', end=' - ')
-        print(meses[temperaturas.index(j)])
+        print(meses[temperaturas.index(j, count)])
+        count += 1
