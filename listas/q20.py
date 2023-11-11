@@ -51,7 +51,7 @@ while True:
 
 abono = calcula_abono(salario)
 
-print('Salário      Abono\n\n')
+print('Salário   -   Abono\n')
 for qtde in range(len(salario)):
     print(f'R${salario[qtde]:>7.2f} - R${abono[qtde]:.2f}')
     if abono[qtde] <= 100:
