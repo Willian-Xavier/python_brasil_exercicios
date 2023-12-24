@@ -17,14 +17,22 @@
 # aceitos valores além dos válidos para o programa (0 a 6). Os valores referentes a cada uma das opções devem ser
 # armazenados num vetor. Após os dados terem sido completamente informados, o programa deverá calcular a percentual de
 # cada um dos concorrentes e informar o vencedor da enquete.
+import random
 
 opcoes = [0] * 6
 sistemas = ['Windows Server', 'Unix', 'Linux', 'Netware', 'Mac OS', 'Outro']
 
 
 def calcula_porcentagem(quantidade_votos, votos_total):
-    return (quantidade_votos / votos_total) * 100
+    if votos_total > 0:
+        return (quantidade_votos / votos_total) * 100
 
+    return 0
+
+
+# LOOP FOR PARA GERAR ENTRADAS COM VALORES ALEATÓRIOS PARA TESTES
+# for aleatorio in range(1, 501):
+#     opcoes[random.randrange(1, 7) - 1] += 1
 
 while True:
     print('Qual o melhor Sistema Operacional para uso em servidores?\n')

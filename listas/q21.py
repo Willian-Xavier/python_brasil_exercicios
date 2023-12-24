@@ -10,11 +10,17 @@
 # cada execução do programa.
 
 def calcula_consumo(consumo_litros):
-    return 1000 / consumo_litros
+    if consumo_litros > 0:
+        return 1000 / consumo_litros
+
+    return 0
 
 
 def calcula_valor_viagem(consumo_litros):
-    return (1000 / consumo_litros) * 2.25
+    if consumo_litros > 0:
+        return (1000 / consumo_litros) * 2.25
+
+    return 0
 
 
 # LISTA CARREGADA

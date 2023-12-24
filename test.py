@@ -8,5 +8,6 @@
 #     letras.append(i)
 # print(letras)
 
-lista = list(range(1, 24))
-print(lista)
+# lista = list(range(1, 24))
+# print(lista)
+print('-' * 58, '\n')
