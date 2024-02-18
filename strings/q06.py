@@ -11,7 +11,7 @@ def data_por_extenso(data):
         return (f'Você nasceu em {data[0:2]} de {meses[int(data[3:5]) - 1]}'
                 f' de {data[6:10]}')
     else:
-        return None
+        return 'Data de nascimento inválida!'
 
 
 data_nascimento = str(input('Informe a data DD/MM/AAAA: '))
