@@ -1,13 +1,15 @@
 import re
 
 
-# Verificação de CPF. Desenvolva um programa que solicite a digitação de um número de CPF no formato xxx.xxx.xxx-xx e
-# indique se é um número válido ou inválido através da validação dos dígitos verificadores e dos caracteres de
+# Verificação de CPF. Desenvolva um programa que solicite a digitação de um
+# número de CPF no formato xxx.xxx.xxx-xx e indique se é um número válido ou
+# inválido através da validação dos dígitos verificadores e dos caracteres de
 # formatação.
 
 
 def valida_cpf(cpf):
-    if len(cpf) < 14 or len(cpf) > 14 and cpf[3:4] != '.' and cpf[7:8] != '.' and cpf[11:12] != '-':
+    if (len(cpf) < 14 or len(cpf) > 14 and cpf[3:4] != '.' and cpf[7:8] != '.'
+            and cpf[11:12] != '-'):
         return f'CPF inválido!'
     else:
         cpf_numeros = ''.join(re.split("""[ .-]""", cpf))
